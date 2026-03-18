@@ -3,7 +3,7 @@
   --md-primary-fg-color:        #FFB74D;  /* Soft Tangerine/Mango Header */
   --md-primary-fg-color--light: #FFE0B2;
   --md-primary-fg-color--dark:  #F57C00;
-  --md-primary-bg-color:        #311B92;  /* Deep Plum text on header */
+  --md-primary-bg-color:        #2A1F5B;  /* DECREASED SATURATION & INCREASED DARKNESS */
 
   /* Lavender / Lilac for Accents */
   --md-accent-fg-color:         #BA68C8;
@@ -35,7 +35,7 @@
 [data-md-color-scheme="default"] .md-typeset h4,
 [data-md-color-scheme="default"] .md-typeset h5,
 [data-md-color-scheme="default"] .md-typeset h6 {
-  color: #12005E !important; /* Extremely dark plum for headings */
+  color: #0A0424 !important; /* DECREASED SATURATION & INCREASED DARKNESS */
 }
 [data-md-color-scheme="default"] .md-typeset a {
   color: #8E24AA !important; /* Vibrant deep lavender for high contrast links */
@@ -45,7 +45,7 @@
 [data-md-color-scheme="slate"] {
   --md-default-bg-color:        #1A1625; /* Very dark slate plum background */
   --md-primary-fg-color:        #FFB74D; /* Keeping tangerine bar */
-  --md-primary-bg-color:        #311B92; /* Deep plum text on header */
+  --md-primary-bg-color:        #2A1F5B; /* DECREASED SATURATION & INCREASED DARKNESS */
   --md-accent-fg-color:         #BA68C8;
 
   --md-default-fg-color:           #F5F5F5;
