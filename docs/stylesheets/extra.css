@@ -1,0 +1,20 @@
+:root {
+  /* Pastel Pink for Main Theme */
+  --md-primary-fg-color:        #F8C8DC;  
+  --md-primary-fg-color--light: #FCE4EC;
+  --md-primary-fg-color--dark:  #F48FB1;
+  /* Dark grey text for header so it's readable on light pink background! */
+  --md-primary-bg-color:        #4A4A4A; 
+
+  /* Pastel Rose for Accents & Links */
+  --md-accent-fg-color:         #F4C2C2;
+  --md-accent-fg-color--transparent: rgba(244, 194, 194, 0.1);
+  --md-accent-bg-color:         #FFFFFF;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #F8C8DC;
+  /* Dark mode text on header should be darker */
+  --md-primary-bg-color:        #333333;  
+  --md-accent-fg-color:         #F4C2C2;
+}
