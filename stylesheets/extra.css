@@ -1,33 +1,33 @@
 :root {
-  /* Peaches & Cream Theme - Global Base */
-  --md-primary-fg-color:        #FFDAB9;  /* Soft Peach Cream Header */
-  --md-primary-fg-color--light: #FFE4C4;
-  --md-primary-fg-color--dark:  #FFB07C;
-  --md-primary-bg-color:        #4E342E;  /* Warm Espresso text on header */
+  /* Sorbet & Lavender Theme - Global Base */
+  --md-primary-fg-color:        #FFB74D;  /* Soft Tangerine/Mango Header */
+  --md-primary-fg-color--light: #FFE0B2;
+  --md-primary-fg-color--dark:  #F57C00;
+  --md-primary-bg-color:        #311B92;  /* Deep Plum text on header */
 
-  /* Coral Tangerine for Accents */
-  --md-accent-fg-color:         #FF8A65;
-  --md-accent-fg-color--transparent: rgba(255, 138, 101, 0.1);
+  /* Lavender / Lilac for Accents */
+  --md-accent-fg-color:         #BA68C8;
+  --md-accent-fg-color--transparent: rgba(186, 104, 200, 0.1);
   --md-accent-bg-color:         #FFFFFF;
 
   /* Full Page Background */
-  --md-default-bg-color:        #FFFBF7; /* Very pale peach background */
+  --md-default-bg-color:        #FEF9F6; /* Soft Shell Off-White */
 }
 
 /* Light Mode (Default) */
 [data-md-color-scheme="default"] {
-  --md-default-bg-color:           #FFFBF7; /* Pale peach block override */
-  --md-default-fg-color:           #4E342E; /* Warm Espresso */
-  --md-default-fg-color--light:    #5D4037;
-  --md-default-fg-color--lighter:  #6D4C41;
-  --md-default-fg-color--lightest: #795548;
-  --md-typeset-color:              #4E342E;
-  --md-typeset-a-color:            #FF8A65; /* Deep Coral Links */
+  --md-default-bg-color:           #FEF9F6; /* Soft Shell Off-White */
+  --md-default-fg-color:           #311B92; /* Deep Plum Text */
+  --md-default-fg-color--light:    #4527A0;
+  --md-default-fg-color--lighter:  #512DA8;
+  --md-default-fg-color--lightest: #5E35B1;
+  --md-typeset-color:              #311B92;
+  --md-typeset-a-color:            #AB47BC; /* Slightly darker lavender for better contrast */
 }
 
-/* Hard Overrides to ensure text legibility on the peach background */
+/* Hard Overrides to ensure text legibility on the soft shell background */
 [data-md-color-scheme="default"] .md-typeset {
-  color: #4E342E !important;
+  color: #311B92 !important;
 }
 [data-md-color-scheme="default"] .md-typeset h1,
 [data-md-color-scheme="default"] .md-typeset h2,
@@ -35,25 +35,25 @@
 [data-md-color-scheme="default"] .md-typeset h4,
 [data-md-color-scheme="default"] .md-typeset h5,
 [data-md-color-scheme="default"] .md-typeset h6 {
-  color: #3E2723 !important; /* Extremely dark espresso for headings */
+  color: #12005E !important; /* Extremely dark plum for headings */
 }
 [data-md-color-scheme="default"] .md-typeset a {
-  color: #E64A19 !important; /* Darker, vivid coral links for high contrast */
+  color: #8E24AA !important; /* Vibrant deep lavender for high contrast links */
 }
 
 /* Dark Mode (Slate) */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color:        #2E1A16; /* Very dark roasted brown for dark background */
-  --md-primary-fg-color:        #FFDAB9; /* Keeping soft peach bar */
-  --md-primary-bg-color:        #4E342E; /* Espresso text on header */
-  --md-accent-fg-color:         #FF8A65;
+  --md-default-bg-color:        #1A1625; /* Very dark slate plum background */
+  --md-primary-fg-color:        #FFB74D; /* Keeping tangerine bar */
+  --md-primary-bg-color:        #311B92; /* Deep plum text on header */
+  --md-accent-fg-color:         #BA68C8;
 
   --md-default-fg-color:           #F5F5F5;
   --md-default-fg-color--light:    #EEEEEE;
   --md-default-fg-color--lighter:  #DDDDDD;
   --md-default-fg-color--lightest: #CCCCCC;
   --md-typeset-color:              #F5F5F5;
-  --md-typeset-a-color:            #FFCCBC; /* Very light peachy coral for dark mode links */
+  --md-typeset-a-color:            #CE93D8; /* Soft lilac for dark mode links */
 }
 [data-md-color-scheme="slate"] .md-typeset {
   color: #F5F5F5 !important;
@@ -67,5 +67,5 @@
   color: #FFFFFF !important;
 }
 [data-md-color-scheme="slate"] .md-typeset a {
-  color: #FFCCBC !important;
+  color: #CE93D8 !important;
 }
