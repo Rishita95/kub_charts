@@ -1,29 +1,64 @@
 :root {
-  /* Soft Blush & Charcoal Theme */
+  /* Soft Blush & Charcoal Theme - Global Base */
   --md-primary-fg-color:        #FDF1F4;  
   --md-primary-fg-color--light: #FFFFFF;
   --md-primary-fg-color--dark:  #F48FB1;
   /* Charcoal text for header */
   --md-primary-bg-color:        #37474F; 
 
-  /* Warm Coral-Pink for Accents & Links */
+  /* Warm Coral-Pink for Accents */
   --md-accent-fg-color:         #F48FB1;
   --md-accent-fg-color--transparent: rgba(244, 143, 177, 0.1);
   --md-accent-bg-color:         #FFFFFF;
 
-  /* Content Text Colors (High Contrast) */
-  --md-text-color:              #1A1A1A; /* Near pure black for maximum readability */
-  --md-typeset-color:           #1A1A1A; /* Same for all body text */
-  --md-typeset-a-color:         #880E4F; /* Deep dark pink for links for WCAG AAA contrast against white */
+  /* Explicit Dark Fonts for Light Base (Default) */
+  --md-default-fg-color:           #111111;
+  --md-default-fg-color--light:    #333333;
+  --md-default-fg-color--lighter:  #444444;
+  --md-default-fg-color--lightest: #555555;
+  --md-typeset-color:              #111111;
+  --md-typeset-a-color:            #880E4F;
 }
 
+body .md-typeset {
+  color: #111111 !important;
+}
+body .md-typeset h1,
+body .md-typeset h2,
+body .md-typeset h3,
+body .md-typeset h4,
+body .md-typeset h5,
+body .md-typeset h6 {
+  color: #000000 !important;
+}
+body .md-typeset a {
+  color: #880E4F !important;
+}
+
+/* Dark Mode (Slate) */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #FDF1F4;
   --md-primary-bg-color:        #37474F;  
   --md-accent-fg-color:         #F48FB1;
 
-  /* Dark Mode Content High Contrast */
-  --md-text-color:              #F5F5F5; /* Standard off-white for dark mode reading */
-  --md-typeset-color:           #F5F5F5;
-  --md-typeset-a-color:         #F8C8DC; /* Light pastel pink for links in dark mode */
+  --md-default-fg-color:           #F5F5F5;
+  --md-default-fg-color--light:    #EEEEEE;
+  --md-default-fg-color--lighter:  #DDDDDD;
+  --md-default-fg-color--lightest: #CCCCCC;
+  --md-typeset-color:              #F5F5F5;
+  --md-typeset-a-color:            #F8C8DC; 
+}
+[data-md-color-scheme="slate"] .md-typeset {
+  color: #F5F5F5 !important;
+}
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+  color: #FFFFFF !important;
+}
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #F8C8DC !important;
 }
