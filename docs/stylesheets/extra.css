@@ -1,52 +1,59 @@
 :root {
-  /* Soft Blush & Charcoal Theme - Global Base */
-  --md-primary-fg-color:        #FDF1F4;  
-  --md-primary-fg-color--light: #FFFFFF;
-  --md-primary-fg-color--dark:  #F48FB1;
-  /* Charcoal text for header */
-  --md-primary-bg-color:        #37474F; 
+  /* Lilac & Lavender Theme - Global Base */
+  --md-primary-fg-color:        #E6E6FA;  /* Lavender header */
+  --md-primary-fg-color--light: #F4F0FF;
+  --md-primary-fg-color--dark:  #D8BFD8;
+  --md-primary-bg-color:        #311B92;  /* Deep Plum text on header */
 
-  /* Warm Coral-Pink for Accents */
-  --md-accent-fg-color:         #F48FB1;
-  --md-accent-fg-color--transparent: rgba(244, 143, 177, 0.1);
+  /* Violet/Plum for Accents */
+  --md-accent-fg-color:         #BA68C8;
+  --md-accent-fg-color--transparent: rgba(186, 104, 200, 0.1);
   --md-accent-bg-color:         #FFFFFF;
 
-  /* Explicit Dark Fonts for Light Base (Default) */
-  --md-default-fg-color:           #111111;
-  --md-default-fg-color--light:    #333333;
-  --md-default-fg-color--lighter:  #444444;
-  --md-default-fg-color--lightest: #555555;
-  --md-typeset-color:              #111111;
-  --md-typeset-a-color:            #880E4F;
+  /* Full Page Background */
+  --md-default-bg-color:        #F8F4FF; /* Pale lilac background */
 }
 
-body .md-typeset {
-  color: #111111 !important;
+/* Light Mode (Default) */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color:           #F8F4FF; /* PALE LILAC BACKGROUND FOR ENTIRE PAGE */
+  --md-default-fg-color:           #311B92;
+  --md-default-fg-color--light:    #4527A0;
+  --md-default-fg-color--lighter:  #512DA8;
+  --md-default-fg-color--lightest: #5E35B1;
+  --md-typeset-color:              #311B92;
+  --md-typeset-a-color:            #8E24AA;
 }
-body .md-typeset h1,
-body .md-typeset h2,
-body .md-typeset h3,
-body .md-typeset h4,
-body .md-typeset h5,
-body .md-typeset h6 {
-  color: #000000 !important;
+
+/* Hard Overrides to ensure text legibility on lilac background */
+[data-md-color-scheme="default"] .md-typeset {
+  color: #311B92 !important;
 }
-body .md-typeset a {
-  color: #880E4F !important;
+[data-md-color-scheme="default"] .md-typeset h1,
+[data-md-color-scheme="default"] .md-typeset h2,
+[data-md-color-scheme="default"] .md-typeset h3,
+[data-md-color-scheme="default"] .md-typeset h4,
+[data-md-color-scheme="default"] .md-typeset h5,
+[data-md-color-scheme="default"] .md-typeset h6 {
+  color: #12005E !important; /* Darkest plum for headings */
+}
+[data-md-color-scheme="default"] .md-typeset a {
+  color: #8E24AA !important; /* Vivid purple links, high contrast */
 }
 
 /* Dark Mode (Slate) */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        #FDF1F4;
-  --md-primary-bg-color:        #37474F;  
-  --md-accent-fg-color:         #F48FB1;
+  --md-default-bg-color:        #1A1625; /* Very dark plum/slate background */
+  --md-primary-fg-color:        #E6E6FA; /* Keep the lavender header */
+  --md-primary-bg-color:        #311B92; /* Deep plum text on header */
+  --md-accent-fg-color:         #CE93D8;
 
   --md-default-fg-color:           #F5F5F5;
   --md-default-fg-color--light:    #EEEEEE;
   --md-default-fg-color--lighter:  #DDDDDD;
   --md-default-fg-color--lightest: #CCCCCC;
   --md-typeset-color:              #F5F5F5;
-  --md-typeset-a-color:            #F8C8DC; 
+  --md-typeset-a-color:            #E1BEE7; /* Light lilac for dark mode links */
 }
 [data-md-color-scheme="slate"] .md-typeset {
   color: #F5F5F5 !important;
@@ -60,5 +67,5 @@ body .md-typeset a {
   color: #FFFFFF !important;
 }
 [data-md-color-scheme="slate"] .md-typeset a {
-  color: #F8C8DC !important;
+  color: #E1BEE7 !important;
 }
