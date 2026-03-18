@@ -10,10 +10,20 @@
   --md-accent-fg-color:         #F48FB1;
   --md-accent-fg-color--transparent: rgba(244, 143, 177, 0.1);
   --md-accent-bg-color:         #FFFFFF;
+
+  /* Content Text Colors (High Contrast) */
+  --md-text-color:              #1A1A1A; /* Near pure black for maximum readability */
+  --md-typeset-color:           #1A1A1A; /* Same for all body text */
+  --md-typeset-a-color:         #880E4F; /* Deep dark pink for links for WCAG AAA contrast against white */
 }
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #FDF1F4;
   --md-primary-bg-color:        #37474F;  
   --md-accent-fg-color:         #F48FB1;
+
+  /* Dark Mode Content High Contrast */
+  --md-text-color:              #F5F5F5; /* Standard off-white for dark mode reading */
+  --md-typeset-color:           #F5F5F5;
+  --md-typeset-a-color:         #F8C8DC; /* Light pastel pink for links in dark mode */
 }
